@@ -1,0 +1,7 @@
+C:\Users\nacik\source\repos\NetCore\Emeklilik\bin\Release\net8.0\publish\Emeklilik.exe
+C:\Users\nacik\source\repos\NetCore\Emeklilik\bin\Release\net8.0\publish\appsettings.Development.json
+C:\Users\nacik\source\repos\NetCore\Emeklilik\bin\Release\net8.0\publish\appsettings.json
+C:\Users\nacik\source\repos\NetCore\Emeklilik\bin\Release\net8.0\publish\Emeklilik.dll
+C:\Users\nacik\source\repos\NetCore\Emeklilik\bin\Release\net8.0\publish\Emeklilik.deps.json
+C:\Users\nacik\source\repos\NetCore\Emeklilik\bin\Release\net8.0\publish\Emeklilik.runtimeconfig.json
+C:\Users\nacik\source\repos\NetCore\Emeklilik\bin\Release\net8.0\publish\Emeklilik.pdb

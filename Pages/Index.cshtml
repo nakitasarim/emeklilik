@@ -1,0 +1,37 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Devlet Memurları için (4C) Emeklilik Yaşı Hesaplama";
+}
+
+
+<div class="text-center">
+    <h1 class="display-4">Memurları için (4C) Emeklilik Yaşı Hesaplama</h1>
+    <p><a href="https://www.hilspot.com">building Web apps with ASP.NET Core by Naci KOÇ</a>.</p>
+</div>
+
+<h2>Bilgileriniz</h2>
+<hr />
+<form method="post">
+    <table class="table table-striped">
+        <tr><td><label for="iseBaslamaTarihi">İşe Başlama Tarihi</label></td><td><input type="date" id="iseBaslamaTarihi" name="iseBaslamaTarihi" value="@Model.IseBaslamaTarihi.ToString("yyyy-MM-dd")"  /></td></tr>
+        <tr><td><label for="dogumTarihi">Doğum Tarihi</label></td><td><input type="date" id="dogumTarihi" name="dogumTarihi" value="@Model.DogumTarihi.ToString("yyyy-MM-dd")"  /></td></tr>
+        <tr><td><label>Cinsiyetinizi seçin</label></td><td><input type="radio" id="male" name="gender" value="Erkek" @(Model.Gender == "Erkek" ? "checked" : "") /><label for="male">&nbsp;Erkek </label> <input type="radio" id="female" name="gender" value="Kadın"  @(Model.Gender == "Kadın" ? "checked" : "")/><label for="female">&nbsp;Kadın </label></td></tr>
+        <tr><td><label for="gunSayisi99Oncesi">1999 Öncesi Gün Sayısı</label></td><td><input type="number" id="gunSayisi99Oncesi" name="gunSayisi99Oncesi" min="0" max="99999" value="@Model.GunSayisi99Oncesi" /></td></tr>
+        <tr><td><label for="AySayisiFHZ2002Oncesi">2002 Öncesi Fiili Hizmet Ay Sayısı</label></td><td><input type="number" id="AySayisiFHZ2002Oncesi" name="AySayisiFHZ2002Oncesi" min="0" max="99999" value="@Model.AySayisiFHZ2002Oncesi" /></td></tr>
+        <tr><td>&nbsp;</td><td>&nbsp;</td><td align="right"><input type="submit" value="Gönder" /></td></tr>
+    </table>
+</form>
+<hr />
+<p>@Model.Sonuc</p> 
+<hr />
+@if (Model.Gender != null)
+{
+    <table class="table table-striped">
+        <tr><td>İşe Başlama Tarihi</td><td>@Model.IseBaslamaTarihi.ToShortDateString()</td></tr>
+        <tr><td>Doğum Tarihi</td><td>@Model.DogumTarihi.ToShortDateString()</td></tr>
+        <tr><td>Cinsiyet</td><td>@Model.Gender</td></tr>
+        <tr><td>1999 Öncesi Gün Sayısı</td><td>@Model.GunSayisi99Oncesi</td></tr>
+        <tr><td>2002 Öncesi Fiili Hizmet Ay Sayısı </td><td>@Model.AySayisiFHZ2002Oncesi</td></tr>
+    </table>    
+}
