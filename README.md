@@ -1,0 +1,3 @@
+Bu proje daha önce masaüstü için geliştirdiğim uygulamanın Asp.Net Core'a uyarlanmış halidir. Geliştirme idesi olarak VS Code kullandım. .Net Core 8 sdk kurulduktan sonra. Projeyi oluşturmak için VS Code üzerinden bir terminal açın yada normal terminal de açabilirsiniz. Projeniz için bir klasör oluşturun ve bu klasöre giriş yapın. Daha sonra " dotnet new webapp -o Emeklilik " komut dizilimi size ASP.NET Core çatılı uygulamayı oluşturacaktır.
+Gerekli hesaplama sınıfı " Hesaplamalar.cs " dosyasındadır.Pages klasöründeki " Index.cshtml " ve " Index.cshtml.cs " değişikleri kendi oluşturduğunu projeye dahil edebilirsiniz.
+Projeyi bilgisayarınızda çalıştırmak için terminal üzerinden proje klasörü içindeyken " dotnet run " komutunu girerek çalıştırın.
